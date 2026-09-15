@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: whiti-daemon
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: COMPOSIO_API_KEY
+        value: ck_fT_ZNa-oByrQs6w7gKbn
+      - key: OWNER_EMAIL
+        value: pakkawork.com@gmail.com
